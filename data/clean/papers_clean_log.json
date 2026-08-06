@@ -1,0 +1,33 @@
+{
+  "cleaned_at": "2026-08-06T03:43:25.404329+00:00",
+  "rows_in": 24,
+  "dropped_missing_paper_id": 0,
+  "dropped_missing_title": 0,
+  "dropped_missing_published": 0,
+  "dropped_summary_too_short": 0,
+  "dropped_duplicate_paper_id": 0,
+  "rows_out": 24,
+  "min_summary_chars": 100,
+  "columns": [
+    "paper_id",
+    "title",
+    "summary",
+    "authors",
+    "categories",
+    "primary_category",
+    "published",
+    "updated",
+    "age_days",
+    "abs_url",
+    "pdf_url",
+    "comment",
+    "authors_joined",
+    "categories_joined",
+    "summary_chars",
+    "text_for_embedding"
+  ],
+  "artifacts": {
+    "clean_csv": "data/clean/papers_clean.csv",
+    "clean_json": "data/clean/papers_clean.json"
+  }
+}
