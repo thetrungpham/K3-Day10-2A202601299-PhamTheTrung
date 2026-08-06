@@ -1,0 +1,9 @@
+{
+  "row_count": 24,
+  "paper_id_nulls": 0,
+  "paper_id_is_unique": true,
+  "title_nulls": 0,
+  "summary_empty_or_null": 0,
+  "stale_count": 0,
+  "passed": true
+}

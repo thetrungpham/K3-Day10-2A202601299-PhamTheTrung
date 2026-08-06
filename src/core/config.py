@@ -109,8 +109,8 @@ def load_settings(project_dir: Path | None = None) -> Settings:
     )
 
     return Settings(
-        llm_provider=os.getenv("LLM_PROVIDER", "gemini"),
-        model_name=os.getenv("LLM_MODEL", "gemini-2.5-flash"),
+        llm_provider=os.getenv("LLM_PROVIDER", "openai"),
+        model_name=os.getenv("LLM_MODEL", "gpt-4o-mini"),
         google_api_key=os.getenv("GOOGLE_API_KEY"),
         openai_api_key=os.getenv("OPENAI_API_KEY"),
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY"),
