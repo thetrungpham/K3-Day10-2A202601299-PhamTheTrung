@@ -1,0 +1,23 @@
+{
+  "fetched_at": "2026-08-06T03:21:35.521014+00:00",
+  "source": "Crossref REST API",
+  "api_url": "https://api.crossref.org/works",
+  "query": "agentic retrieval augmented generation large language model",
+  "filter": "from-pub-date:2026-02-07,has-abstract:true",
+  "rows_requested": 24,
+  "total_results_reported": 99740,
+  "items_received": 24,
+  "skipped_invalid_item": 0,
+  "skipped_missing_doi_or_title": 0,
+  "records_missing_abstract": 0,
+  "records_missing_subject": 24,
+  "records_missing_published": 0,
+  "records_published_in_future": 0,
+  "duplicate_doi": 0,
+  "records_parsed": 24,
+  "unique_paper_ids": 24,
+  "artifacts": {
+    "raw_api_response": "data/raw/crossref_response.json",
+    "raw_records_json": "data/raw/crossref_records.json"
+  }
+}
