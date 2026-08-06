@@ -1,0 +1,26 @@
+{
+  "cleaned_at": "2026-08-06T04:40:35.509052+00:00",
+  "min_summary_chars": 100,
+  "columns": [
+    "paper_id",
+    "title",
+    "summary",
+    "authors",
+    "categories",
+    "primary_category",
+    "published",
+    "updated",
+    "age_days",
+    "abs_url",
+    "pdf_url",
+    "comment",
+    "authors_joined",
+    "categories_joined",
+    "summary_chars",
+    "text_for_embedding"
+  ],
+  "artifacts": {
+    "clean_csv": "data/clean/papers_corrupted.csv",
+    "clean_json": "data/clean/papers_corrupted.json"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "input_rows": 24,
+  "output_rows": 27,
+  "net_row_change": 3,
+  "random_seed": 42,
+  "corruption_fraction": 0.15,
+  "frozen_test_set": {
+    "path": "D:/K3-Day10-2A202601299-PhamTheTrung/data/eval/test_set.json",
+    "loaded": true,
+    "ground_truth_doc_ids": [
+      "10.2118/234689-pa",
+      "10.1007/s10278-026-02086-9",
+      "10.35314/3y9hy151",
+      "10.20944/preprints202602.0996.v1"
+    ],
+    "matched_clean_doc_ids": [
+      "10.2118/234689-pa",
+      "10.1007/s10278-026-02086-9",
+      "10.35314/3y9hy151",
+      "10.20944/preprints202602.0996.v1"
+    ],
+    "corrupted_overlap_doc_ids": [
+      "10.1007/s10278-026-02086-9",
+      "10.20944/preprints202602.0996.v1",
+      "10.2118/234689-pa",
+      "10.35314/3y9hy151"
+    ],
+    "overlap_count": 4
+  },
+  "operations": [
+    {
+      "type": "drop_frozen_document",
+      "count": 1,
+      "affects_frozen_test_set": true,
+      "frozen_paper_ids": [
+        "10.2118/234689-pa"
+      ],
+      "records": [
+        {
+          "paper_id": "10.2118/234689-pa",
+          "title": "SafeRAG: A Large-Language-Model-Based Multistage Retrieval-Augmented Framework for Oil and Gas Safety Report Generation",
+          "published": "2026-08-01"
+        }
+      ],
+      "parameters": {
+        "reason": "force a retrieval miss on the frozen evaluation set"
+      }
+    },
+    {
+      "type": "blank_summary",
+      "count": 4,
+      "affects_frozen_test_set": true,
+      "frozen_paper_ids": [
+        "10.1007/s10278-026-02086-9"
+      ],
+      "records": [
+        {
+          "paper_id": "10.1007/s10278-026-02086-9",
+          "before_summary_chars": 1860,
+          "after_summary_chars": 0
+        },
+        {
+          "paper_id": "10.52060/juptik.v4i1.4318",
+          "before_summary_chars": 1095,
+          "after_summary_chars": 0
+        },
+        {
+          "paper_id": "10.47576/2949-1894.2026.7.7.023",
+          "before_summary_chars": 1597,
+          "after_summary_chars": 0
+        },
+        {
+          "paper_id": "10.3390/app16052244",
+          "before_summary_chars": 1575,
+          "after_summary_chars": 0
+        }
+      ]
+    },
+    {
+      "type": "stale_date",
+      "count": 4,
+      "affects_frozen_test_set": true,
+      "frozen_paper_ids": [
+        "10.35314/3y9hy151"
+      ],
+      "records": [
+        {
+          "paper_id": "10.35314/3y9hy151",
+          "before_published": "2026-02-26",
+          "after_published": "2000-01-01"
+        },
+        {
+          "paper_id": "10.70121/001c.158711",
+          "before_published": "2026-03-15",
+          "after_published": "2000-01-01"
+        },
+        {
+          "paper_id": "10.1111/exsy.70341",
+          "before_published": "2026-06-30",
+          "after_published": "2000-01-01"
+        },
+        {
+          "paper_id": "10.3390/buildings16132637",
+          "before_published": "2026-07-02",
+          "after_published": "2000-01-01"
+        }
+      ],
+      "parameters": {
+        "forced_date": "2000-01-01"
+      }
+    },
+    {
+      "type": "add_embedding_noise",
+      "count": 4,
+      "affects_frozen_test_set": true,
+      "frozen_paper_ids": [
+        "10.20944/preprints202602.0996.v1"
+      ],
+      "records": [
+        {
+          "paper_id": "10.20944/preprints202602.0996.v1",
+          "before_text_chars": 1934,
+          "after_text_chars": 3616
+        },
+        {
+          "paper_id": "10.55041/isjem07213",
+          "before_text_chars": 1814,
+          "after_text_chars": 3496
+        },
+        {
+          "paper_id": "10.7717/peerj-cs.3882",
+          "before_text_chars": 1608,
+          "after_text_chars": 3290
+        },
+        {
+          "paper_id": "10.54254/2753-8818/2026.dl34055",
+          "before_text_chars": 1795,
+          "after_text_chars": 3477
+        }
+      ],
+      "parameters": {
+        "noise_prefix": "ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise ZXQV_CORRUPTED irrelevant random tokens malformed placeholder content unrelated football weather cooking cryptocurrency advertisement noise"
+      }
+    },
+    {
+      "type": "duplicate_rows",
+      "count": 4,
+      "affects_frozen_test_set": true,
+      "frozen_paper_ids": [
+        "10.20944/preprints202602.0996.v1"
+      ],
+      "records": [
+        {
+          "paper_id": "10.20944/preprints202602.0996.v1",
+          "title": "Clinical Large Language Models with Multi-Stage Instruction Tuning and Advanced Retrieval-Augmented Generation",
+          "id_preserved": true
+        },
+        {
+          "paper_id": "10.21203/rs.3.rs-10178277/v1",
+          "title": "Retrieval-Augmented Large-Language-Model-Based Time-Series Forecasting for Cross-Market Equity Analysis",
+          "id_preserved": true
+        },
+        {
+          "paper_id": "10.3390/buildings16132637",
+          "title": "An Agentic AI System for Roof Design Compliance Using Computer Vision, Retrieval-Augmented Generation and Large Language Models",
+          "id_preserved": true
+        },
+        {
+          "paper_id": "10.21079/11681/50309",
+          "title": "Microsoft Azure artificial intelligence / machine learning hackathon for development of retrieval-augmented generation large language model",
+          "id_preserved": true
+        }
+      ]
+    }
+  ]
+}
