@@ -8,7 +8,7 @@
 | MSSV            | 2A202602007                                                         |
 | Khóa/Lớp        | K3                                                                  |
 | Tên nhóm        | Nhóm A7                                                             |
-| Vai trò chính   | Corruption & Integration Owner - Checkpoint C4                      |
+| Vai trò chính   | Corruption & Integration Owner                                      |
 | Repository      | `https://github.com/thetrungpham/K3-Day10-2A202601299-PhamTheTrung` |
 | Ngày hoàn thành | 2026-08-06                                                          |
 
